@@ -16,14 +16,14 @@ name: Python package
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
 
   # 🤖 CI paragraph
-  #
+
   # uncomment the content of this paragraph to activate the tests in GitHub CI
   # - remove the 2 trailing characters "# ", do not change the spaces
   #   (the `name` keys should be at the same level as the `uses` key)
