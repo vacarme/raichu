@@ -1,0 +1,8 @@
+from raichu.lib import standardize
+from numpy import arange,allclose, zeros,ones
+from pandas import DataFrame as df
+from pandas import mean,std
+
+def test_len():
+  assert allclose(df(standardize(arange(9).reshape(3,3))).mean(axis=0),zeros(3))
+  assert allclose(df(standardize(arange(9).reshape(3,3))).std(axis=0), ones(3))
