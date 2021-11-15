@@ -1,4 +1,4 @@
-from sklearn.preprocessing import StandardScaler,RobustScaler
+from sklearn.preprocessing import StandardScaler
 import pandas as pd
 
 def standardize(X):
